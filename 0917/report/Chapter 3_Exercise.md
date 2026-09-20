@@ -1,4 +1,4 @@
-# 0917 과제 - Chapter 3 Review Questions and Exercises 풀이
+# 0917 과제 - Chapter 3 Review Questions 풀이
 
 ## 3.9 Review Questions and Exercises
 
