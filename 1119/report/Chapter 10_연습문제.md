@@ -1,8 +1,6 @@
-# 10장. Structures and Macros - Review Questions and Exercises
+# 10.7 Review Questions and Exercises
 
-## 10.7 Review Questions and Exercises
-
-### 10.7.1 Short Answer
+## 10.7.1 Short Answer
 
 **1. What is the purpose of the STRUCT directive?**
 
@@ -74,7 +72,7 @@ RentalInvoice ENDS
 
 ------------------------------------------------------------------------
 
-### 10.7.2 Algorithm Workbench
+## 10.7.2 Algorithm Workbench
 
 **1. Create a structure named SampleStruct containing two fields: field1, a single 16-bit WORD, and field2, an array of 20 32-bit DWORDS. The initial values of the fields may be left undefined.**
 
@@ -352,7 +350,7 @@ ENDM
 
 ## 10.8 Programming Exercises
 
-**1. mReadkey Macro**
+**★ 1. mReadkey Macro**
 
 * 답: `ReadChar`를 호출하면 `AL`에 ASCII 코드, `AH`에 스캔 코드가 반환된다.
 
@@ -398,7 +396,7 @@ main ENDP
 END main
 ```
 
-**2. mWritestringAttr Macro**
+**★ 2. mWritestringAttr Macro**
 
 * 답: `SetTextColor`로 색상을 변경해 문자열을 출력한 뒤 원래 색상(`lightGray`)으로 복구한다.
 
@@ -433,7 +431,7 @@ main ENDP
 END main
 ```
 
-**3. mMove32 Macro**
+**★ 3. mMove32 Macro**
 
 * 답: x86 어셈블리에서는 메모리에서 메모리로의 직접 `MOV`가 불가능하므로 `EAX` 레지스터를 경유한다.
 
@@ -462,7 +460,7 @@ main ENDP
 END main
 ```
 
-**4. mMult32 Macro**
+**★ 4. mMult32 Macro**
 
 * 답: 32비트 부호 없는 곱셈(`MUL`) 또는 부호 있는 곱셈(`IMUL`)을 사용해 하위 32비트 결과를 첫 번째 피연산자(또는 결과 저장용 피연산자)에 저장한다.
 
@@ -581,7 +579,7 @@ main ENDP
 END main
 ```
 
-**7. The Professor's Lost Phone**
+**★★★ 7. The Professor's Lost Phone**
 
 * 답: 기존 `DrunkardWalk` 프로그램에서 총 걸음 수(`WalkMax`) 중 무작위 시점(`dropStep`)을 미리 뽑아두고, 해당 단계에 도달했을 때의 좌표를 휴대폰 분실 위치로 저장하여 출력한다.
 
